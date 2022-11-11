@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CALCULATOR</title>
+  <!-- ====== CSS ====== -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!-- ====== CALCULATOR ====== -->
+  <div class="container">
+    <!-- ---
+      # TITLE CALCULATOR
+      --- -->
+    <div class="title__calculator">
+      <h1>Aplicación de <span>Calculadora</span></h1>
+      <label for="">INTERFAZ DE USUARIO</label>
+      <!-- --- NAME --- -->
+      <div class="name">
+        <img src="./images/business-startup.png" class="business" alt="" />
+      </div>
+    </div>
+    <!-- ---
+      # MODEL CALCULATOR
+      --- -->
+
+    <div id="app">
+      <form name="calculator">
+        <input type="textfield" name="ans" value="" autocomplete="off" readonly>
+        <div class="butons">
+          <input type="button" value="7" onclick="document.calculator.ans.value+='7'">
+          <input type="button" value="8" onclick="document.calculator.ans.value+='8'">
+          <input type="button" value="9" onclick="document.calculator.ans.value+='9'">
+          <input type="button" value="+" class="operations" onclick="document.calculator.ans.value+='+'">
+          <br>
+          <input type="button" value="4" onclick="document.calculator.ans.value+='4'">
+          <input type="button" value="5" onclick="document.calculator.ans.value+='5'">
+          <input type="button" value="6" onclick="document.calculator.ans.value+='6'">
+          <input type="button" value="-" class="operations" onclick="document.calculator.ans.value+='-'">
+          <br>
+          <input type="button" value="1" onclick="document.calculator.ans.value+='1'">
+          <input type="button" value="2" onclick="document.calculator.ans.value+='2'">
+          <input type="button" value="3" onclick="document.calculator.ans.value+='3'">
+          <input type="button" value="x" class="operations" onclick="document.calculator.ans.value+='*'">
+          <br>
+          <input type="button" value="0" onclick="document.calculator.ans.value+='0'">
+          <input type="reset" value="C">
+          <input type="button" value="=" class="result"
+            onclick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+          <input type="button" value="/" class="operations" onclick="document.calculator.ans.value+='/'">
+        </div>
+      </form>
+    </div>
+    <!-- ====== CALCULATOR END ====== -->
+
+</body>
+
+</html>
